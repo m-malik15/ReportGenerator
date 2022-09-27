@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReportin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.Repository", "Petroineos.IntraDayReporting.Repository\Petroineos.IntraDayReporting.Repository.csproj", "{B449EC0B-0690-4882-BF32-58A57A0B00AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.UnitTests", "Petroineos.IntraDayReporting.UnitTests\Petroineos.IntraDayReporting.UnitTests.csproj", "{D03179D9-120B-438F-B1DB-4A4E0FCF8AC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03179D9-120B-438F-B1DB-4A4E0FCF8AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03179D9-120B-438F-B1DB-4A4E0FCF8AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03179D9-120B-438F-B1DB-4A4E0FCF8AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03179D9-120B-438F-B1DB-4A4E0FCF8AC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

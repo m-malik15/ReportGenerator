@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="Moq" Version="4.18.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Petroineos.IntraDayReporting.Domain\Petroineos.IntraDayReporting.Domain.csproj" />
+    <ProjectReference Include="..\Petroineos.IntraDayReporting.Repository\Petroineos.IntraDayReporting.Repository.csproj" />
+    <ProjectReference Include="..\Petroineos.IntraDayReporting.Service\Petroineos.IntraDayReporting.Service.csproj" />
+  </ItemGroup>
+
+</Project>
