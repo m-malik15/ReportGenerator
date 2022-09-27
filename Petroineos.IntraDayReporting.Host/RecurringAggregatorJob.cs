@@ -19,7 +19,7 @@ namespace Petroineos.IntraDayReporting.Host
         public RecurringAggregatorJob(ILogger<RecurringAggregatorJob> logger, JobConfig config, ITradingService tradingService, IClockService clockService, ICsvGeneratorService csvGeneratorService, IReportsRepo reportsRepo)
         {
             _logger = logger;
-            MaximumSecondsDelayBetweenConsecutiveReportExtractions = config.MaximumSecondsDelayBetweenConsecutiveReportExtrations;
+            MaximumSecondsDelayBetweenConsecutiveReportExtractions = config.MaximumSecondsDelayBetweenConsecutiveReportExtractions;
             _tradingService = tradingService;
             _clockService = clockService;
             _csvGeneratorService = csvGeneratorService;
