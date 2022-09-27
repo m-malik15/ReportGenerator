@@ -1,21 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-Petroineos.IntraDayReporting.Host-A43FBE14-1E7B-4CAD-BE7D-025281433D91</UserSecretsId>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
-    <PackageReference Include="Polly" Version="7.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Petroineos.IntraDayReporting.Domain\Petroineos.IntraDayReporting.Domain.csproj" />
-    <ProjectReference Include="..\Petroineos.IntraDayReporting.Repository\Petroineos.IntraDayReporting.Repository.csproj" />
     <ProjectReference Include="..\Petroineos.IntraDayReporting.Service\Petroineos.IntraDayReporting.Service.csproj" />
   </ItemGroup>
+
 </Project>

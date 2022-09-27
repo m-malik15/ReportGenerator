@@ -10,6 +10,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.Domain", "Petroineos.IntraDayReporting.Domain\Petroineos.IntraDayReporting.Domain.csproj", "{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.Service", "Petroineos.IntraDayReporting.Service\Petroineos.IntraDayReporting.Service.csproj", "{78924001-330D-476A-AA3C-07F9E7F77953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.Repository", "Petroineos.IntraDayReporting.Repository\Petroineos.IntraDayReporting.Repository.csproj", "{B449EC0B-0690-4882-BF32-58A57A0B00AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +26,18 @@ Global
 		{A5E6755A-5273-4E47-AF2A-F98987F4EF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E6755A-5273-4E47-AF2A-F98987F4EF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E6755A-5273-4E47-AF2A-F98987F4EF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78924001-330D-476A-AA3C-07F9E7F77953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78924001-330D-476A-AA3C-07F9E7F77953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78924001-330D-476A-AA3C-07F9E7F77953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78924001-330D-476A-AA3C-07F9E7F77953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B449EC0B-0690-4882-BF32-58A57A0B00AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
