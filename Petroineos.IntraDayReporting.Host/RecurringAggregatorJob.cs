@@ -32,7 +32,7 @@ namespace Petroineos.IntraDayReporting.Host
             {
                 try
                 {
-                    int pendingReports = await ExecuteEarliestReportGenerationAsync();
+                    var pendingReports = await ExecuteEarliestReportGenerationAsync();
                     if (pendingReports == 0)
                     {
                         var delayMilliseconds = this.MaximumSecondsDelayBetweenConsecutiveReportExtractions * 1000;
@@ -47,6 +47,7 @@ namespace Petroineos.IntraDayReporting.Host
                 }
                 catch (Exception ex)
                 {
+                    // log the exception
                     _logger.LogError(ex, $"Exception while calling method {nameof(ExecuteEarliestReportGenerationAsync)}");
                 }
 
@@ -63,7 +64,7 @@ namespace Petroineos.IntraDayReporting.Host
 
             var retryPolicy = CreateExponentialBackoffPolicy();
 
-            //Get existing csv reports
+            //Get existing csv reports, if there are any
             var allExistingReports = await _reportsRepo.GetReports();
 
             var alreadyGeneratedReports = allExistingReports
@@ -189,6 +190,10 @@ namespace Petroineos.IntraDayReporting.Host
             return aggregatedPositions.OrderBy(ag => ag.Period).ToList();
         }
 
+        /// <summary>
+        /// Wait and retry 3 times in the event of an exception
+        /// </summary>
+        /// <returns></returns>
         private static AsyncRetryPolicy CreateExponentialBackoffPolicy()
         {
             return Policy

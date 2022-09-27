@@ -9,8 +9,6 @@ IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddLogging(builder => builder.AddLog4Net());
         services.AddHostedService<RecurringAggregatorJob>();
-
-
         services.AddTransient<ICsvGeneratorService, CsvGeneratorService>();
 
         services.AddSingleton<JobConfig>(jc =>
