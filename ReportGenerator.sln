@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{797C2606-3543-4BF8-B454-E18186F0678A}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		PowerService.dll = PowerService.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petroineos.IntraDayReporting.Domain", "Petroineos.IntraDayReporting.Domain\Petroineos.IntraDayReporting.Domain.csproj", "{4D99D0AE-E32A-4BE6-8365-2B407FC2725C}"
